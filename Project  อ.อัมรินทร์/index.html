@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>กรณีศึกษาเมทานอลสีเขียว</title>
+
+  <!-- Font + Icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ✅ หน้า Welcome -->
+  <section id="welcome-screen" class="welcome-screen">
+    <div class="welcome-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Emblem_of_Department_of_Industrial_Works_of_Thailand.svg" class="logo-welcome" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Eastern_Economic_Corridor_Logo.svg" class="logo-welcome eec" />
+      <h1 class="welcome-title">โครงการศึกษาและพัฒนาการจัดการความปลอดภัยในกระบวนการทางเคมี <br>และการใช้เคมีภัณฑ์ในภาคอุตสาหกรรม  
+        อย่างยั่งยืน (Sustainable Chemistry) <br>เพื่อส่งเสริมการปกป้องสภาพภูมิอากาศ ในเขตพื้นที่ EEC
+        </h1>
+      <button id="enter-site-btn" class="enter-btn">เข้าสู่เว็บไซต์</button>
+    </div>
+  </section>
+
+  <!-- ✅ หน้าเว็บหลัก -->
+  <div id="main-site" class="hidden">
+    <!-- Header -->
+    <header class="main-header">
+      <div class="header-left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Emblem_of_Department_of_Industrial_Works_of_Thailand.svg" class="logo" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Eastern_Economic_Corridor_Logo.svg" class="logo small-logo" />
+      </div>
+      <div class="header-center">
+        <h1 id="main-project-title">
+          โครงการศึกษาและพัฒนาการจัดการความปลอดภัยในกระบวนการทางเคมี<br />
+          และการใช้เคมีภัณฑ์ในภาคอุตสาหกรรมอย่างยั่งยืน (Sustainable Chemistry)<br />
+          เพื่อส่งเสริมการป้องกันสภาพภูมิอากาศ ในเขตพื้นที่ EEC
+        </h1>
+      </div>
+      <div class="header-right">
+        <button id="toggleLang" class="lang-toggle">TH | EN</button>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="side-menu">
+      <nav>
+        <ul>
+          <li><a href="#section1">สถานการณ์การใช้สารเคมี</a></li>
+          <li><a href="#section2">แนวทางเคมียั่งยืน</a></li>
+          <li><a href="#section3">กรณีตัวอย่าง</a></li>
+          <li><a href="#section4">เทคโนโลยีที่เกี่ยวข้อง</a></li>
+          <li><a href="#section5">มาตรการป้องกันอันตราย</a></li>
+          <li><a href="#section6">ข้อมูลเครือข่ายในพื้นที่</a></li>
+          <li><a href="#section7">เกี่ยวกับเรา</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="section" id="section3">
+        <div class="section-header highlight">
+          <h2 id="section-case-title">กรณีตัวอย่าง: การผลิตเมทานอลหมุนเวียน</h2>
+        </div>
+
+        <div class="main-card">
+          <div class="card-title" id="card-title">เมทานอลสีเขียว</div>
+          <p id="card-content">
+            เมทานอลสีเขียวหรือเมทานอลหมุนเวียน (CH<sub>3</sub>OH) เป็นสารเคมีเหลวที่พัฒนาขึ้นเพื่อลดการปล่อยก๊าซคาร์บอนไดออกไซด์ และผลิตโดยใช้แหล่งพลังงานหมุนเวียนทั้งหมด สารเคมี “ต่ำคาร์บอน” ผลิตจากชีวมวลหรือคาร์บอนไดออกไซด์ และไฮโดรเจนผลิตจากไฟฟ้าหมุนเวียน...
+          </p>
+
+          <!-- Box Info -->
+          <div class="info-boxes">
+            <div class="info-card blue">
+              <div class="info-title">
+                <i class="fas fa-recycle"></i><br />
+                ระยะของวงจรชีวิต
+              </div>
+              <div class="info-subtext">อินพุต</div>
+            </div>
+
+            <div class="info-card white">
+              <div class="info-title">
+                <i class="fas fa-bullseye"></i> ศักยภาพในการลดก๊าซเรือนกระจก
+              </div>
+              <div class="info-subtext scrollable">
+                สามารถลดการปล่อยก๊าซเรือนกระจก 65 % ถึง 95 % (เมื่อเปรียบเทียบกับเชื้อเพลิงฟอสซิล)...
+              </div>
+            </div>
+
+            <div class="info-card green">
+              <div class="info-title">
+                <i class="fas fa-thumbs-up"></i> สถานะการครบกำหนดของโซลูชัน ก่อตั้งใหม่:
+              </div>
+              <div class="info-subtext">
+                ขั้นตอนที่แนวคิดทางเทคโนโลยีได้รับการอนุมัติแต่ยังไม่ถูกนำมาใช้กว้างขวาง...
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Strip -->
+          <div class="label-strip">กุญแจประจำตัว / ไดรเวอร์และสิ่งกีดขวาง</div>
+          <div class="footer-strip">
+            <div class="strip-box strip-blue">P</div>
+            <div class="strip-box strip-pink">ERD</div>
+            <div class="strip-box strip-yellow">RS</div>
+            <div class="strip-box strip-purple">FS STOCK</div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="cta">
+            <a href="#" id="more-info-btn"><i class="fas fa-plus"></i> ข้อมูลเพิ่มเติมและเครื่องมือ</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="lang.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
